@@ -8,7 +8,8 @@ pip install pytest
 pip install selenium  
 
 ## Instructions  
-\schoology_create_course>pytest -s -v
+In terminal:
+..\schoology_create_course>pytest -s -v
 
 ## Disclaimer  
 This test will fail as is. Locators are stubbed out after the login page due to the lack of access to the workflow. 
