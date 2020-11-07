@@ -8,7 +8,7 @@ pip install pytest
 pip install selenium  
 
 ## Instructions  
-In terminal:
+In terminal:  
 ..\schoology_create_course>pytest -s -v
 
 ## Disclaimer  
