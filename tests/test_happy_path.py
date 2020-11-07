@@ -7,6 +7,8 @@ from pages.course_page import CoursePage
 
 def test_create_new_course_happy_path(chrome_browser):
     # Test Data
+    email = "Test@email.com"
+    password = "Password!"
     course_title = "TestCourse"
     subject_area = "Technology"
     course_level = "12"
@@ -17,8 +19,8 @@ def test_create_new_course_happy_path(chrome_browser):
 
     # Login
     login_page = LoginPage(chrome_browser)
-    login_page.populate_username_field("Test@email.com")
-    login_page.populate_password_field("Password!")
+    login_page.populate_username_field(email)
+    login_page.populate_password_field(password)
     login_page.click_login_button()
 
     # Navigate to courses page
